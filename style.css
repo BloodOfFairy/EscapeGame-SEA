@@ -1,11 +1,19 @@
 
 :root{
+	/* 
+	
 	--mainLight: #FD6759;
 	--secondLight: #8A9AEB;
 	--mainDark: #130719;
 	--secondDark: #160606;
 	--Second: #130007;
-	--third: #390312;
+	--third: #390312; */
+	--contrast: #ECD444;
+	--light: #E9F1F7;
+	--dark: #191716;
+	--gray: #7C8996;
+	--main: #473BF0;
+	--second: #574AE2;
 }
 
 /* font import */
@@ -78,7 +86,7 @@ h2 {
 
 /* selection de texte */
 *::selection{
-	background-color: var(--mainLight);
+	background-color: var(--contrast);
 }
 
 
@@ -89,7 +97,7 @@ h2 {
 	width: 100vw;
 	display: block;
 	margin: 0px auto;
-	border: 2px solid var(--secondLight)
+	border: 2px solid var(--dark)
 }
 
 .slider-item {
@@ -101,8 +109,8 @@ h2 {
 }
 
 .arrow {
-	border: solid var(--secondLight);
-	border-width: 0 3px 3px 0;
+	border: solid var(--contrast);
+	border-width: 0 6px 6px 0;
 	display: inline-block;
 	padding: 12px;
 }
@@ -169,15 +177,15 @@ h2 {
 	width: max(15vw, 200px);
 	border-radius: 5px;
 	margin: 100px auto;
-	color: var(--mainLight);
-	background: var(--secondDark);
+	color: var(--contrast);
+	background: var(--dark);
 }
 
 #dropdown input[type="checkbox"] {
 	display: none;
 }
 #dropdown input[type="checkbox"]:checked ~ #bloc-links{
-	height: 90px;
+	height: 120px;
 	transform: scaleY(1);
 }
 
@@ -189,10 +197,8 @@ h2 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: var(--secondDark);
 	cursor: pointer;
 	border-radius: 5px;
-	color: var(--mainLight);
 }
 
 #btn-top img {
@@ -207,12 +213,13 @@ h2 {
 }
 
 #bloc-links li {
-	padding: 5PX 0;
+	padding: 8px 0;
 }
 #bloc-links li a{
 	font-size: 18px;
-	color: var(--mainLight);
+	color: var(--contrast);
 	margin-left: 5px;
+	text-decoration: none;
 }
 
 #bloc-links li:last-child {
@@ -238,8 +245,8 @@ h2 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: var(--secondLight);
-	text-shadow: 0 0 5px var(--mainDark);
+	color: var(--light);
+	text-shadow: 0 0 5px var(--dark);
 }
 
 
@@ -256,7 +263,7 @@ h2 {
 }
 
 .static {
-	background: var(--secondDark);
+	background: var(--gray);
 }
 
 .bg1::after {
@@ -283,11 +290,11 @@ h2 {
 	font-size: calc(64 * var(--textPerc));
 	animation: marquee 15s infinite linear;
 	white-space: nowrap;
-	background-color: var(--Second);
+	background-color: var(--main);
 }
 
 .marquee::after{
-	content: "ESCAPE GAME - FUN - EN FAMILLE - ESPACE - JE SAIS PAS QUOI RAJOUTER -";
+	content: "ESCAPE GAME - ROBOTS - ADOS/ADULTS - DYSTOPIE - ALLEZ VOUS SURVIVRE ? -";
 }
 
 .marquee:hover{
@@ -296,8 +303,8 @@ h2 {
 
 .marquee::selection{
 	cursor: text;
-	content: "ESCAPE GAME - FUN - EN FAMILLE - ESPACE - JE SAIS PAS QUOI RAJOUTER -";
-	background-color: var(--Second);
+	content: "ESCAPE GAME - ROBOTS - ADOS/ADULTS - DYSTOPIE - ALLEZ VOUS SURVIVRE ? -";
+	background-color: var(--main);
 }
 /* carte avec decalage au survole */
 .card-slide{
@@ -312,8 +319,8 @@ h2 {
 	padding: 30px;
 	min-height: 300px;
 	width: 80vw;
-	background: var(--third);
-	border: 2px solid var(--Second);
+	background: var(--main);
+	border: 2px solid var(--dark);
 	transition: transform 0.25s ease-in-out;
 	will-change: transform;
 }
@@ -324,9 +331,10 @@ h2 {
 }
 .card-back{
 	position: absolute;
+	box-sizing: border-box;
 	width: 100%;
 	height: 100%;
-	border: 2px dashed var(--mainDark);
+	border: 2px dashed var(--contrast);
 	top: 0;
 	z-index: -1;
 }
@@ -344,10 +352,12 @@ h2 {
 	box-sizing: border-box;
 	transform: rotate(-90deg);
 	z-index: 15;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
 	bottom: 50px;
 	left: 10px;
-	background: var(--secondDark);
+	background: var(--gray);
 	size: 20px;
 	transition: transform 0.5s ease-in;
 }
@@ -369,10 +379,10 @@ h2 {
 	height: 60px;
 	text-decoration: none;
 	font-size: 3rem;
-	color: #f1f1f1;
-	background: var(--secondDark);
+	color: var(--light);
+	background: var(--gray);
 	border-radius: 5px;
-	box-shadow: 5px 5px 10px var(--Second), -5px -5px 10px var(--mainDark) 
+	box-shadow: 5px 5px 10px #b2bac4, -5px -5px 10px #5d656d;
 
 }
 
@@ -383,7 +393,7 @@ h2 {
 /* footer */
 footer{
 	height: 17vh;
-	background: var(--mainDark);
+	background: var(--dark);
 	z-index: 3;
 	margin-top: -17vh;
 }
@@ -406,6 +416,6 @@ footer{
 
 @media screen and (min-width: 900px) {
 	.static{
-		background-color: #141414;
+		
 	}
 }
