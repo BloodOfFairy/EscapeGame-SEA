@@ -1,7 +1,6 @@
 
 :root{
 	/* 
-	
 	--mainLight: #FD6759;
 	--secondLight: #8A9AEB;
 	--mainDark: #130719;
@@ -136,12 +135,12 @@ h2 {
 	opacity: 1;
 	transform: scale(0);
 	animation: apparition 0.5s ease-in forwards;
-	background: url("assets/slider1.webp");
+	background: url("assets/3.jpg");
 	background-position: top center;
 	background-size: cover;
 }
 .item-2 {
-	background: url("assets/slider2.webp");
+	background: url("assets/img.jpg");
 	
 	background-position: top center;
 	background-size: cover;
@@ -191,7 +190,7 @@ h2 {
 
 #btn-top {
 	padding: 20px;
-	width: calc(max(15vw, 200px) - 20);
+	width: calc(max(15vw, 200px) - 20px);
 	border: none;
 	font-size: 20px;
 	display: flex;
@@ -310,7 +309,6 @@ h2 {
 .card-slide{
 	box-sizing: border-box;
 	min-height: 300px;
-	width: 50;
 	margin: auto;
 	position: relative;
 }
@@ -355,10 +353,9 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	bottom: 50px;
+	bottom: 35px;
 	left: 10px;
 	background: var(--gray);
-	size: 20px;
 	transition: transform 0.5s ease-in;
 }
 
@@ -392,10 +389,20 @@ h2 {
 
 /* footer */
 footer{
+	padding: 0 120px;
 	height: 17vh;
 	background: var(--dark);
 	z-index: 3;
 	margin-top: -17vh;
+}
+footer a{
+	color: var(--contrast);
+	list-style: none;
+}
+footer h3{
+	font-size: 2rem;
+	font-family: 'Times New Roman', Times, serif;
+	
 }
 
 @keyframes marquee {
