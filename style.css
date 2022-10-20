@@ -10,10 +10,10 @@
 	--third: #390312; */
 	--contrast: #ECD444;
 	--light: #E9F1F7;
-	--dark: #191716;
-	--gray: #7C8996;
-	--main: #473BF0;
-	--second: #574AE2;
+	--dark: #3b3532;
+	--gray: #ed4960;
+	--main: #0368b1;
+	--second: #83cbd7;
 }
 
 /* font import */
@@ -164,6 +164,37 @@ h2 {
 	z-index: 3;
 	opacity: 1;
 }
+nav input{
+	display: none;
+}
+nav input[type="checkbox"]:checked ~ .click-deroulant{
+	height: 120px;
+	transform: scaleY(1);
+
+
+
+}
+.click-deroulant{
+	position: absolute;
+	height: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scaleY(0);
+	display: list-item ;
+	width: 100%;
+	
+}
+
+nav ul{
+	display: flex;
+	position: sticky;
+	top: 0px;
+	z-index: 100;
+	background: red;
+	height: 5vh;
+}
+nav li {
+	width: 25%;
+}
 
 /* dropdown menu */
 #dropdown {
@@ -191,7 +222,7 @@ h2 {
 
 #btn-top {
 	padding: 20px;
-	width: calc(max(15vw, 200px) - 20);
+	width: calc(max(15vw, 200px) - 20px);
 	border: none;
 	font-size: 20px;
 	display: flex;
@@ -311,7 +342,7 @@ h2 {
 	box-sizing: border-box;
 	min-height: 300px;
 	width: 50;
-	margin: auto;
+	margin: 0 auto;
 	position: relative;
 }
 .card-content{
@@ -324,7 +355,16 @@ h2 {
 	transition: transform 0.25s ease-in-out;
 	will-change: transform;
 }
-.card-content:hover{
+.card-content .card-flex{
+	display: flex;
+	align-items: center;
+	align-self: center;
+
+}
+.card-content p{
+	font-size: 1.1rem;
+}
+.card-content:hover:nth-child(0){
 	box-sizing: border-box;
 	transform: translate(20px, -20px);
 	
@@ -338,6 +378,30 @@ h2 {
 	top: 0;
 	z-index: -1;
 }
+
+.card-static-content{
+	box-sizing: border-box;
+	padding: 2vh;
+	background: var(--dark);
+	min-height: 300px;
+	width: 80vw;
+}
+
+.card-static-flex{
+	margin-top: 3vh;
+	display: flex;
+}
+
+.card-static-flex img{
+	margin-right: 2vw;
+}
+
+.imgs-container{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
 /* page appés parallax*/
 #second-page{
 	position: relative;
@@ -382,7 +446,7 @@ h2 {
 	color: var(--light);
 	background: var(--gray);
 	border-radius: 5px;
-	box-shadow: 5px 5px 10px #b2bac4, -5px -5px 10px #5d656d;
+	box-shadow: 5px 5px 10px #e67282, -5px -5px 10px #b33647;
 
 }
 
