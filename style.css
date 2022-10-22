@@ -164,32 +164,44 @@ h2 {
 	z-index: 3;
 	opacity: 1;
 }
-nav input{
-	display: none;
+
+
+nav ul li:last-child:hover  .click-deroulant{
+	background-color: blue;
+
 }
-nav input[type="checkbox"]:checked ~ .click-deroulant{
-	height: 120px;
-	transform: scaleY(1);
+nav li {
+	float: left;
+}
+nav li label, nav li a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 1.6vh 0;
 
-
-
+}
+nav li label{
+	height: 5vh;
 }
 .click-deroulant{
-	position: absolute;
-	height: 0;
+	display: block;
 	transition: all 0.4s ease-in-out;
-	transform: scaleY(0);
-	display: list-item ;
-	width: 100%;
+	z-index: 100;
+	position: absolute;
+	display: block;
+	background-color: #0368b1;
 	
 }
 
 nav ul{
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
 	display: flex;
 	position: sticky;
 	top: 0px;
 	z-index: 100;
-	background: red;
+	background:var(--gray);
 	height: 5vh;
 }
 nav li {
