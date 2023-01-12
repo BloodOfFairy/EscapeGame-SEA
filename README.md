@@ -1,10 +1,24 @@
 # EscapeGame
-Projet de BUT, site de présentation d'un EscapeGame
-## Outils
----
-    Pur HTML,CSS
----
-## Support
+A basic landing page to present a fictive escape  game
 
-For support, email bloodoffairy@gmail.com .
+## Getting Started
+
+### Prerequisites
+
+- CodeEditor
+
+### Installation
+
+1. Clone the repository
+```git
+git clone https://github.com/yohemm/escape-game-sea.git
+```
+
+## Usage
+
+1. Open index.html
+
+## Authors
+
+* **Yohem** - *Initial work* - [Your GitHub username](https://github.com/yohemm)
 
