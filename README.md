@@ -1,5 +1,5 @@
 # EscapeGame
-A basic landing page to present a fictive escape  game
+A basic landing page to present a fictive escape  game.
 
 ## Getting Started
 
@@ -20,5 +20,5 @@ git clone https://github.com/yohemm/escape-game-sea.git
 
 ## Authors
 
-* **Yohem** - *Initial work* - [Your GitHub username](https://github.com/yohemm)
+* **Yohem** - *Initial work* - [Yohemm](https://github.com/yohemm)
 
