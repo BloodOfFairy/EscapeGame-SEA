@@ -2,6 +2,11 @@
 # Escape Game
 
 <!-- ![Project Banner](path/to/banner/image)  -->
+## 🌟 Project Status
+
+> **Current Status**: **:purple_circle: Finished**
+
+---
 
 ## Overview
 A basic landing page to present a fictive escape game.
